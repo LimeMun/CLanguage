@@ -1,4 +1,4 @@
-int a;
+// extern int a;
 int f(void)
 {
 	int b, c;
