@@ -22,12 +22,18 @@ int main(void) {
 	return 0;
 }
 void bubble(int x[], int n) {
-int i, j;
+	int i, j;
 	for (i = 0; i < n-1; ++i){
+		printf("-----------Iteration %d-----------\n", i);
 		for (j = n-1; j > i; --j){
 			if (x[j-1] > x[j]){
 				swap(&x[j-1], &x[j]);
 			}
+			printf("Temp array: ");
+			for (int k = 0; k < N; ++k){
+				printf("%d ", x[k]);
+			}
+			printf("\n");
 		}
 	}
 }
